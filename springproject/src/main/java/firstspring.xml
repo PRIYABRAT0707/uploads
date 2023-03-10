@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean class="org.valarmorgulis.beans.MobileSpecs" name="mobilespecs">
+<property name="id">
+<value>101</value>
+</property>
+<property name="name">
+<value>redmi note 12</value>
+</property>
+<property name="processor">
+<value>snapdragon 888g</value>
+</property>
+<property name="price">
+<value>19000.90</value>
+</property>
+<property name="camera_in_mp">
+<value>160</value>
+</property>
+
+
+
+
+</bean>
+
+
+
+
+
+
+</beans>

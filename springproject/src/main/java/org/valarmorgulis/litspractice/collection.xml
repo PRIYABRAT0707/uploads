@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean class="org.valarmorgulis.litspractice.LaptopSpecs" name="LaptopSpecs">
+
+<property name="lid" value="1009" />
+<property name="connectedhardwares">
+<list>
+<value>keyboard</value><value>mouse</value><value>earphone</value><value>speaker</value><value>lan</value>
+</list>
+</property>
+<property name="kerneldetails">
+<set>
+<value>intel i5 11th genneration</value><value>ram 16gb</value><value>1tb</value><value>ubuntu</value><value>cached memory=4mb</value>
+</set>
+</property>
+<property name="inbuiltapps">
+<map>
+<entry key="1" value="mozila firefox"/><entry key="2" value="filemanager"/><entry key="3" value="image viewer"/><entry key="4" value="office"/>
+<entry key="5" value="eclipse"/>
+</map>
+</property>
+
+
+
+
+</bean>
+
+
+
+
+
+
+</beans>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:util="http://www.springframework.org/schema/util"
+xmlns:context="http://www.springframework.org/schema/context"
+
+
+
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd 
+http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ 
+
+<!-- <util:list list-class=""></util:list> -->
+
+<!-- 
+  <context:component-scan base-package=" org.valarmorgulis.springjdbc">
+
+</context:component-scan>  
+<bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" name="ds">
+<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+<property name="url"  value="jdbc:oracle:thin:@localhost:1521:orcl" />
+<property name="username" value="c##PPANDA" />
+<property name="password" value="PPANDA" />
+</bean>
+
+<bean class="org.springframework.jdbc.core.JdbcTemplate" id="moinfo">
+<property name="dataSource">
+<ref bean="ds"/>
+</property>
+
+</bean>
+
+
+<bean  class="org.valarmorgulis.springjdbc.MovieDao" name="md">
+
+<property name="jtt" ref="moinfo" />
+</bean>
+
+ -->
+
+
+
+
+</beans>

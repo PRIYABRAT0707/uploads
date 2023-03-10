@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<bean class="org.valarmorgulis.referencevariable.MotorBike"
+		name="mbike">
+
+		<property name="mid" value="101"></property>
+		<property name="engine" value="350cc petrol"></property>
+		<property name="price" value="240000.78"></property>
+
+	</bean>
+
+	<bean class="org.valarmorgulis.referencevariable.Car" name="car">
+		<property name="cid" value="100"></property>
+		<property name="engine" value="1900cc petrol"></property>
+		<property name="price" value="2000000.89"></property>
+		<property name="mb">
+		<ref bean="mbike"/>
+		</property>
+	</bean>
+
+
+
+</beans>

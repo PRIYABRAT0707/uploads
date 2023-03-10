@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:util="http://www.springframework.org/schema/util"
+
+
+
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd 
+http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util.xsd">
+
+<!-- standalone list creting -->
+<util:list list-class="java.util.LinkedList" id="worker">
+<value>gayle</value>
+<value>kohli</value>
+<value>dhoni</value>
+<value>ambati raydu</value>
+
+</util:list>
+<util:map map-class="java.util.HashMap" id="p3">
+<entry key="100" value="django"></entry>
+<entry key="101" value="java"></entry>
+<entry key="102" value="react"></entry>
+</util:map>
+
+<bean class="org.vlarmorgulis.standalonecollection.practicinghashmap" name="p2">
+<property name="mymap" ref="p3"></property>
+
+</bean>
+
+
+<bean class="org.vlarmorgulis.standalonecollection.Pesrson" name="po">
+
+<property name="worker" ref="worker" />
+
+
+</bean>
+
+
+
+
+
+
+
+</beans>
